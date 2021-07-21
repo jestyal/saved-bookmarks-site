@@ -87,7 +87,6 @@ web_modules/
 
 # Next.js build output
 .next
-out
 
 # Nuxt.js build / generate output
 .nuxt
@@ -124,3 +123,5 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
+package-lock.json
+styles.css
