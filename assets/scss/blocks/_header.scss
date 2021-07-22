@@ -1,18 +1,23 @@
 @import "../vars";
 
-.header {
+.header,
+.footer {
   max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 11px 45px;
 }
-.header_right {
+.header_right,
+.footer_right {
   display: flex;
   align-items: center;
 }
 .logo__wrap {
   display: flex;
-  align-items: center;
+  align-items: end;
+}
+.logo__wrap_btm {
+  align-items: baseline;
 }
 .logo {
   font-size: 30px;
@@ -20,6 +25,10 @@
 }
 .logo__subtitle {
   margin-left: 12px;
+  line-height: 1;
+  svg {
+    margin: 0 4px -2px;
+  }
 }
 
 .search-form__form {
@@ -30,12 +39,6 @@
   display: block;
   margin: 0;
 }
-.search-form__btn-wrap {
-  display: flex;
-  position: relative;
-  width: 20px;
-  height: 20px;
-}
 .search-form__input {
   width: 50px;
   border: 0;
@@ -45,6 +48,12 @@
   &:focus {
     outline: none;
   }
+}
+.search-form__btn-wrap {
+  display: flex;
+  position: relative;
+  width: 20px;
+  height: 20px;
 }
 .search-form__btn {
   display: block;
@@ -57,6 +66,7 @@
   position: absolute;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .open-btn__wrap {
   margin-left: 30px;
@@ -67,6 +77,17 @@
   font-size: 16px;
   line-height: 1;
   color: $black;
+  &:hover {
+    color: $red;
+    svg {
+      circle {
+        stroke: $red !important;
+      }
+      path {
+        fill: $red !important;
+      }
+    }
+  }
   span {
     display: block;
   }
@@ -84,6 +105,9 @@
   color: $black;
   &:not(:last-of-type) {
     margin-bottom: 6px;
+  }
+  &:hover {
+    color: $red;
   }
 }
 .language__item_active {
