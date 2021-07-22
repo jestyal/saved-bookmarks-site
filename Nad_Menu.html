@@ -12,12 +12,20 @@
         .menu {
             display: flex;
             flex-wrap: wrap;
+            font-weight: lighter;
             font-family: sans-serif;
             justify-content: space-between;
             padding: 10px;
             border: salmon solid 1px;
         }
 
+        @media screen and (max-width: 299px) {
+            .menu {
+                height: 30px;
+                overflow: auto;
+                text-overflow: ellipsis;
+            }
+        }
 
         a {
             color: rgba(193, 193, 193, 1);
@@ -36,7 +44,7 @@
 </head>
 
 <body>
-    <div class="menu">
+    <div class="menu" id="elem">
         <a href="#">00.all</a>
         <a href="#">01.inspiration</a>
         <a href="#">02.news</a>
