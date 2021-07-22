@@ -1,48 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="../assets/images/favicon.svg" type="image/svg">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <title>Saved Bookmarks</title>
+</head>
+<body>
 <header class="header">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <div class="logo">saved</div>
-                <div class="subtitle">- these are hand-made bookmarks for various services,<br>
-                    sites, references, and more for the designer
+            <div class="col header_left">
+                <div class="logo__wrap">
+                    <div class="logo">saved</div>
+                    <div class="logo__subtitle">- these are hand-made bookmarks for various services,<br>
+                        sites, references, and more for the designer
+                    </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col justify-content-end header_right">
                 <div class="search-form__wrap">
-                    <form action="" class="search-form">
+                    <form action="" class="search-form__form">
                         <label class="search-form__label">
                             <input type="text" class="search-form__input" value="search">
                         </label>
-                        <label class="search-form__label">
-                            <input type="submit" class="search-form__btn">
+                        <label class="search-form__label search-form__btn-wrap">
+                            <input type="submit" class="search-form__btn" value="">
                             <span class="search-form__icon">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                     xmlns="http://www.w3.org/2000/svg">
                                     <circle cx="8" cy="8" r="7" stroke="#C1C1C1" stroke-width="2" />
                                     <rect width="9.65772" height="1.97726"
-                                        transform="matrix(0.715241 0.698878 -0.715241 0.698878 13.0924 11.8686)"
-                                        fill="#C1C1C1" />
+                                          transform="matrix(0.715241 0.698878 -0.715241 0.698878 13.0924 11.8686)"
+                                          fill="#C1C1C1" />
                                 </svg>
                             </span>
                         </label>
                     </form>
                 </div>
-                <div class="">
-                    <a href="#" class="">
+                <div class="open-btn__wrap">
+                    <a href="#" class="open-btn__link">
                         <span>open info</span>
                         <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="10" cy="10" r="9" fill="white" stroke="#1D1D1D" stroke-width="2" />
                             <path
-                                d="M10.7149 9.32508H14.6666V10.6942H10.7149V14.6667H9.28509V10.6942H5.33331V9.32508H9.28509V5.33334H10.7149V9.32508Z"
-                                fill="#1D1D1D" />
+                                    d="M10.7149 9.32508H14.6666V10.6942H10.7149V14.6667H9.28509V10.6942H5.33331V9.32508H9.28509V5.33334H10.7149V9.32508Z"
+                                    fill="#1D1D1D" />
                         </svg>
                     </a>
                 </div>
-                <div class="">
-                    <a href="#" class="">рус</a>
-                    <a href="#" class="">eng</a>
+                <div class="language__list">
+                    <a href="#" class="language__item">рус</a>
+                    <a href="#" class="language__item language__item_active">eng</a>
                 </div>
             </div>
         </div>
     </div>
 </header>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

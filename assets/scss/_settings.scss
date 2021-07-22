@@ -1,3 +1,5 @@
+@import "vars";
+
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +7,17 @@
 }
 body {
   background: #fff;
-  color: #1D1D1D;
+  color: $black;
   font-size: 14px;
   font-weight: normal;
   font-family: 'Cotham Sans';
 }
 a {
+  color: $black;
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 p {
   font-family: 'Roboto', sans-serif;
