@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+  font-family: 'Cotham Sans';
+  src: url('../fonts/CothamSans.eot');
+  src: local('Cotham Sans'), local('CothamSans'),
+  url('../fonts/CothamSans.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/CothamSans.woff2') format('woff2'),
+  url('../fonts/CothamSans.woff') format('woff'),
+  url('../fonts/CothamSans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SFProDisplay-Semibold.eot');
+  src: local('SF Pro Display Semibold'), local('SFProDisplay-Semibold'),
+  url('../fonts/SFProDisplay-Semibold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+  url('../fonts/SFProDisplay-Semibold.woff') format('woff'),
+  url('../fonts/SFProDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SF Pro Display';
+  src: url('../fonts/SFProDisplay-Regular.eot');
+  src: local('SF Pro Display Regular'), local('SFProDisplay-Regular'),
+  url('../fonts/SFProDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+  url('../fonts/SFProDisplay-Regular.woff') format('woff'),
+  url('../fonts/SFProDisplay-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
