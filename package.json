@@ -1,0 +1,26 @@
+{
+  "name": "saved-bookmarks-site",
+  "version": "1.0.0",
+  "description": "Site by Figma template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "gulp sass",
+    "watch": "gulp watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jestyal/saved-bookmarks-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jestyal/saved-bookmarks-site/issues"
+  },
+  "homepage": "https://github.com/jestyal/saved-bookmarks-site#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.35.2"
+  }
+}
