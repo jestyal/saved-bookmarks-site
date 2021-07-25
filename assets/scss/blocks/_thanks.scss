@@ -1,0 +1,37 @@
+.thanks-msg__wrap {
+  text-align: center;
+  font-weight: 400;
+  line-height: 1;
+  @media screen and (max-width: 480px) {
+    & {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+}
+.thanks-msg__icon {
+  width: 100%;
+  margin-bottom: 20px;
+  img {
+    @media screen and (max-width: 480px) {
+      & {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}
+.thanks-msg__title {
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+.thanks-msg__desc {
+  margin-bottom: 55px;
+  font-size: 20px;
+  color: $text-grey;
+}
+.thanks-msg__link {
+  font-size: 30px;
+  color: $red;
+}

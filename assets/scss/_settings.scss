@@ -26,5 +26,13 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 .wrapper_full-height {
+  display: flex;
+  align-items: center;
   height: calc(100vh - 122px);
+  @media screen and (max-width: 480px) {
+    & {
+      height: auto;
+      align-items: initial;
+    }
+  }
 }
