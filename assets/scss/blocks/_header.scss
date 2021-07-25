@@ -2,10 +2,32 @@
 
 .header,
 .footer {
-  max-width: 1440px;
   width: 100%;
   margin: 0 auto;
   padding: 11px 45px;
+  @media screen and (max-width: 768px)  {
+  & {
+    padding: 11px 0;
+  }
+}
+}
+.header,
+.footer {
+  .container-fluid {
+    max-width: 1440px;
+    width: 100%;
+  }
+}
+.header {
+  border-bottom: 1px solid $border-color;
+}
+.footer {
+  border-top: 1px solid $border-color;
+  @media screen and (max-width: 480px)  {
+    & {
+      display: none;
+    }
+  }
 }
 .header_right,
 .footer_right {
@@ -26,6 +48,11 @@
 .logo__subtitle {
   margin-left: 12px;
   line-height: 1;
+  @media screen and (max-width: 992px)  {
+    & {
+      display: none;
+    }
+  }
   svg {
     margin: 0 4px -2px;
   }
@@ -77,6 +104,7 @@
   font-size: 16px;
   line-height: 1;
   color: $black;
+  white-space: nowrap;
   &:hover {
     color: $red;
     svg {

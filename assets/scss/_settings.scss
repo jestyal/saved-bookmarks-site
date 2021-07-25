@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 body {
+  min-width: 385px;
+  width: 100%;
   background: #fff;
   color: $black;
   font-size: 14px;
@@ -22,4 +24,7 @@ a {
 }
 p {
   font-family: 'Roboto', sans-serif;
+}
+.wrapper_full-height {
+  height: calc(100vh - 122px);
 }
