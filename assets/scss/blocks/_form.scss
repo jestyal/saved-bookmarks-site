@@ -1,0 +1,41 @@
+.form__wrap {
+  padding: 60px 15px;
+}
+.form__img {
+  margin-bottom: 60px;
+}
+.form {
+  max-width: 890px;
+  width: 100%;
+}
+.form__label {
+  display: block;
+  margin-bottom: 20px;
+  &:last-of-type{
+    margin-bottom: 0;
+  }
+}
+.form__input {
+  display: block;
+  width: 100%;
+  padding: 25px;
+  border: 0;
+  background: $bg-input;
+  color: $text-input;
+  font-size: 30px;
+  line-height: 1;
+  &:focus {
+    outline: none;
+  }
+  &::placeholder {
+    color: $text-input;
+  }
+}
+.form__link {
+  margin-top: 40px;
+  border: 0;
+  font-size: 30px;
+  line-height: 1;
+  background: transparent;
+  color: $red;
+}
