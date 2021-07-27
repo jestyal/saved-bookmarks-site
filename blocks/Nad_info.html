@@ -11,26 +11,50 @@
             color: rgba(253, 67, 0, 1);
             text-decoration: none;
         }
+
+        .colortext {
+            color: rgba(253, 67, 0, 1);
+        }
+
+        .contener {
+            display: grid;
+            height: 200px;
+            width: 800px;
+            border: springgreen solid 1px;
+        }
+
+        @media screen and(max-width: 350px) {
+            .contener {
+                display: flex;
+                height: 170px;
+                width: 310px;
+            }
+        }
     </style>
 </head>
 
 <body>
-    <div class="contener">
-        <p style="color:rgba(253, 67, 0, 1) ;">
-            color>Press ⌘+D to bookmark this page
-        </p>
-        "saved" is a platform for inspiration and promotion of good products - these are
-        hand-picked
-        bookmarks various services, sites, references, and more.<br>
 
-        "saved" is a non-profit passion project of <p style="color: rgba(253, 67, 0, 1)">andrey sobolev.</p> <br>
 
-        it is a curated gallery with a design point of view. each bookmarks is reviewed to meet a standard in
-        functional and visual qualities.
+    <small>
+        <p><span class="colortext">Press ⌘+D to bookmark this page</span></p>
+    </small>
 
-        <p>“What drives me? Attempts to express gratitude for using the fruits of work done before them by others.</p>
-        <a href="#"> Suggest product </a>
-    </div>
+    <h4>"saved" is a platform for inspiration and promotion of good products - these are
+        hand-picked bookmarks various services, sites, references, and more.</h4>
+
+    <h4> "saved" is a non-profit passion project of <span class="colortext"> andrey sobolev.</span></h4>
+
+    <h4> it is a curated gallery with a design point of
+        view. each bookmarks is reviewed to meet a standard in functional and visual qualities.</h4><br>
+
+    <small>
+        <p>“What drives me?
+            Attempts to express gratitude for using the fruits of work done before them by others.</p>
+        <p style="color: rgba(193, 193, 193, 1);">Steven Paul Jobs</p>
+    </small>
+    <h3><a href="#"> Suggest product </a></h3>
+
 </body>
 
 </html>
