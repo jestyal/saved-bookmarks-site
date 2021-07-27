@@ -17,15 +17,12 @@
   &:last-of-type {
     margin-right: 0;
   }
-  &:visited {
-    color: $grey;
+  &.menu__item_active {
+    color: $black;
+    border-bottom: 2px solid $red;
   }
   &:hover {
     color: $black;
     border-bottom: 2px solid $red;
   }
-}
-.menu__item_active {
-  color: $black;
-  border-bottom: 2px solid $red;
 }
