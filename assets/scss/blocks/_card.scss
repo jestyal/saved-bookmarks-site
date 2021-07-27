@@ -7,6 +7,7 @@
   }
 }
 .card {
+  display: block;
   min-width: 250px;
   width: 100%;
   margin-bottom: 30px;
@@ -35,6 +36,7 @@
 }
 
 .card-img__wrap {
+  position: relative;
   display: flex;
   height: 250px;
   margin-bottom: 20px;
@@ -46,4 +48,42 @@
 .card-img-top {
   width: auto;
   border-radius: 0;
+}
+
+.card__item {
+  padding-top: 8px;
+  margin-bottom: 60px;
+  .card-img__wrap {
+    margin-bottom: 0;
+  }
+}
+.card-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.share-link {
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 20px;
+  bottom: 15px;
+  right: 15px;
+}
+.tags {
+  font-size: 20px;
+  line-height: 1;
+  color: $text_grey;
+}
+.notification {
+  margin-top: 15px;
+  font-size: 16px;
+  line-height: 1;
+}
+.share__link {
+  display: block;
+  margin-top: 30px;
+  font-size: 20px;
+  line-height: 1;
+  color: $red;
 }
