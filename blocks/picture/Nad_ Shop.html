@@ -11,11 +11,11 @@
     <style>
         .card-title {
             font-weight: bold;
-            font-size: 1em;
+            font-size: 15px;
         }
 
         .card-text {
-            font-size: 0.7em;
+            font-size: 10px;
         }
 
         .card-body {
@@ -27,6 +27,7 @@
         }
 
         .card-img-top {
+
             grid-column: 1/2;
             grid-row: 1/2;
             max-height: 50%;
@@ -40,13 +41,59 @@
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
+
         }
 
-        .container {
+        .container-fluid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr;
+            justify-items: stretch;
+            align-items: stretch;
+            justify-content: space-evenly;
+            align-content: stretch;
             gap: 1vw;
+        }
+
+        .menu {
+            display: flex;
+            overflow: auto;
+            font-weight: lighter;
+            font-family: sans-serif;
+            justify-content: space-between;
+        }
+
+        a {
+            color: rgba(193, 193, 193, 1);
+            white-space: nowrap;
+            text-decoration: none;
+            padding: 5px;
+        }
+
+        a:visited {
+            color: rgba(193, 193, 193, 1);
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 400px) {
+            .container-fluid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+
+            }
+
+            .card-title {
+                font-weight: bold;
+                font-size: 2vw;
+            }
+
+            .card-text {
+                font-size: 2vw;
+            }
         }
     </style>
 
@@ -54,200 +101,221 @@
 
 <body>
     <div class="container">
-        <div class="card">
-            <img class="card-img-top" src="image_1.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">cliply.co</h5>
-                <p class="card-text">Grab their attention with stock animated gifs crafted for commercial use.
-                </p>
-            </div>
+        <div class="menu">
+            <a href="#">00.all</a>
+            <a href="#">01.inspiration</a>
+            <a href="#">02.news</a>
+            <a href="#">03.community</a>
+            <a href="#">04.design systems</a>
+            <a href="#">05.icons</a>
+            <a href="#">06.illustrations</a>
+            <a href="#">07.mockups</a>
+            <a href="#">08.colors</a>
+            <a href="#">08.stock photos</a>
         </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_2.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">lapa.ninja</h5>
-                <p class="card-text">The best landing page design inspiration from around the web. 2350+ landing
-                    page examples and updated daily.
-                </p>
+        <div class="container-fluid">
+            <div class="card">
+                <img class="card-img-top" src="image_1.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">cliply.co</h5>
+                    <p class="card-text">Grab their attention with stock animated gifs crafted for commercial use.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_3.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">pages.ooo</h5>
-                <p class="card-text">A showcase of the Crazy Web and Interactive Design
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_2.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">lapa.ninja</h5>
+                    <p class="card-text">The best landing page design inspiration from around the web. 2350+ landing
+                        page examples and updated daily.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_4.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">cliply.co</h5>
-                <p class="card-text">Grab their attention with stock animated gifs crafted for commercial use.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_3.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">pages.ooo</h5>
+                    <p class="card-text">A showcase of the Crazy Web and Interactive Design
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_5.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">themasterpicks.com</h5>
-                <p class="card-text">Inspiring hand picked curated masterpiece design project every day.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_4.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">cliply.co</h5>
+                    <p class="card-text">Grab their attention with stock animated gifs crafted for commercial use.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_6.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">uxui.monster</h5>
-                <p class="card-text">A gallery featuring the best landing page and app examples from around the web.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_5.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">themasterpicks.com</h5>
+                    <p class="card-text">Inspiring hand picked curated masterpiece design project every day.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_7.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">klikkentheke.com</h5>
-                <p class="card-text">Webdesign catalogue featuring carefully selected websites with a preference to
-                    modernism and simplicity.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_6.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">uxui.monster</h5>
+                    <p class="card-text">A gallery featuring the best landing page and app examples from around the web.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_8.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">visualjournal.it</h5>
-                <p class="card-text">The best in branding, editorial and graphic design.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_7.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">klikkentheke.com</h5>
+                    <p class="card-text">Webdesign catalogue featuring carefully selected websites with a preference to
+                        modernism and simplicity.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_9.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">eva.design</h5>
-                <p class="card-text">Customizable Design System easily adaptable to your Brand. Available for Sketch
-                    with Mobile and Web component libraries. Free and Open Source.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_8.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">visualjournal.it</h5>
+                    <p class="card-text">The best in branding, editorial and graphic design.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_10.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">Название сайта</h5>
-                <p class="card-text">Free collection of beautiful patterns for all vector formats.
-                    For Sketch, Figma, XD, Illustrator. In png and svg
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_9.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">eva.design</h5>
+                    <p class="card-text">Customizable Design System easily adaptable to your Brand. Available for Sketch
+                        with Mobile and Web component libraries. Free and Open Source.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_11.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">gradienta.io</h5>
-                <p class="card-text">Multicolor CSS gradients, JPG downloads, 100% free.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_10.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">Название сайта</h5>
+                    <p class="card-text">Free collection of beautiful patterns for all vector formats.
+                        For Sketch, Figma, XD, Illustrator. In png and svg
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_12.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">happyhues.co</h5>
-                <p class="card-text">A color palette inspiration site that acts as a real world example as to how the
-                    colors could be used in your design projects.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_11.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">gradienta.io</h5>
+                    <p class="card-text">Multicolor CSS gradients, JPG downloads, 100% free.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_13.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">buninux.com</h5>
-                <p class="card-text">Collection of Sketch app freebies. Carefully crafted design assets made to level up
-                    your workflow.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_12.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">happyhues.co</h5>
+                    <p class="card-text">A color palette inspiration site that acts as a real world example as to how
+                        the
+                        colors could be used in your design projects.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_14.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">isoflat.com</h5>
-                <p class="card-text">Download free isometric vectors & graphic resources. IsoFlat is the best place to
-                    discover unlimited free vectors and graphic resources.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_13.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">buninux.com</h5>
+                    <p class="card-text">Collection of Sketch app freebies. Carefully crafted design assets made to
+                        level up
+                        your workflow.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_15.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">growwwkit.com</h5>
-                <p class="card-text">A set of 8 simple, black & white, stylish illustrations for landing pages, mobile
-                    screens and other editorial purposes..
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_14.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">isoflat.com</h5>
+                    <p class="card-text">Download free isometric vectors & graphic resources. IsoFlat is the best place
+                        to
+                        discover unlimited free vectors and graphic resources.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_16.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">github.com/MariaLetta/mega-doo</h5>
-                <p class="card-text">Big vector pack with hand-drawn doodles for presentations, social media, blog posts
-                    and so on.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_15.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">growwwkit.com</h5>
+                    <p class="card-text">A set of 8 simple, black & white, stylish illustrations for landing pages,
+                        mobile
+                        screens and other editorial purposes..
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_17.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">opendoodles.com</h5>
-                <p class="card-text">A library of sketchy illustrations of people free for personal and commercial use.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_16.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">github.com/MariaLetta/mega-doo</h5>
+                    <p class="card-text">Big vector pack with hand-drawn doodles for presentations, social media, blog
+                        posts
+                        and so on.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_18.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">liamrichards.me</h5>
-                <p class="card-text">80+ high-quality UI sounds for your projects. Professionally created and processed
-                    by a collective of sound designers, producers and UI designers.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_17.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">opendoodles.com</h5>
+                    <p class="card-text">A library of sketchy illustrations of people free for personal and commercial
+                        use.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_19.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">bensound.com</h5>
-                <p class="card-text">Download creative commons music, royalty free music for free and use it in your
-                    project.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_18.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">liamrichards.me</h5>
+                    <p class="card-text">80+ high-quality UI sounds for your projects. Professionally created and
+                        processed
+                        by a collective of sound designers, producers and UI designers.
+                    </p>
+                </div>
             </div>
-        </div>
 
-        <div class="card">
-            <img class="card-img-top" src="image_20.png" alt="Логотип">
-            <div class="card-body">
-                <h5 class="card-title">artboard.studio</h5>
-                <p class="card-text">Artboard Studio is world's the first online graphic design application mainly
-                    focused on product mockups.
-                </p>
+            <div class="card">
+                <img class="card-img-top" src="image_19.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">bensound.com</h5>
+                    <p class="card-text">Download creative commons music, royalty free music for free and use it in your
+                        project.
+                    </p>
+                </div>
             </div>
-        </div>
 
+            <div class="card">
+                <img class="card-img-top" src="image_20.png" alt="Логотип">
+                <div class="card-body">
+                    <h5 class="card-title">artboard.studio</h5>
+                    <p class="card-text">Artboard Studio is world's the first online graphic design application mainly
+                        focused on product mockups.
+                    </p>
+                </div>
+            </div>
+
+        </div>
     </div>
-
 
 
 
