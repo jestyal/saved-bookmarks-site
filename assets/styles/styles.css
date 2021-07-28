@@ -58,12 +58,21 @@ p {
 .wrapper_full-height {
   display: flex;
   align-items: center;
-  height: calc(100vh - 230px);
+  height: calc(100vh - 122px);
 }
 @media screen and (max-width: 480px) {
   .wrapper_full-height {
     height: auto;
     align-items: initial;
+  }
+}
+
+.wrapper_full-height_menu {
+  height: calc(100vh - 230px);
+}
+@media screen and (max-width: 480px) {
+  .wrapper_full-height_menu {
+    height: auto;
   }
 }
 
@@ -118,6 +127,7 @@ p {
 }
 
 .logo {
+  display: block;
   font-size: 30px;
   line-height: 1;
 }
@@ -346,6 +356,7 @@ p {
 }
 
 .form__link {
+  display: block;
   margin-top: 40px;
   border: 0;
   font-size: 30px;
