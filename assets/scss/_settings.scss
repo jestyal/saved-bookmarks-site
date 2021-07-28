@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   position: relative;
   min-width: 385px;
@@ -13,23 +14,28 @@ body {
   color: $black;
   font-size: 14px;
   font-weight: normal;
-  font-family: 'Cotham Sans';
+  font-family: 'Cotham Sans', sans-serif;
 }
+
 a {
   color: $black;
   text-decoration: none;
+
   &:hover {
     color: $red;
     text-decoration: none;
     opacity: 0.8;
   }
 }
+
 input {
-  font-family: 'Cotham Sans';
+  font-family: 'Cotham Sans', sans-serif;
 }
+
 p {
   font-family: 'Roboto', sans-serif;
 }
+
 .wrapper_full-height {
   display: flex;
   align-items: center;
@@ -41,13 +47,16 @@ p {
     }
   }
 }
+
 .wrapper_block {
   display: block;
 }
+
 .container-fluid {
   max-width: 1440px;
   width: 100%;
 }
+
 .title {
   margin-bottom: 20px;
   font-size: 20px;
