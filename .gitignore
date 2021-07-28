@@ -124,4 +124,3 @@ dist
 .pnp.*
 
 package-lock.json
-styles.css
