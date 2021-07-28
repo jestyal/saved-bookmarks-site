@@ -1,0 +1,31 @@
+.menu__wrap {
+  overflow: hidden;
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  width: 110%;
+  padding: 40px 0;
+  overflow: auto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+}
+.menu__item {
+  padding-bottom: 6px;
+  margin-right: 24px;
+  color: $grey;
+  white-space: nowrap;
+  text-decoration: none;
+  &:last-of-type {
+    margin-right: 0;
+  }
+  &.menu__item_active {
+    color: $black;
+    border-bottom: 2px solid $red;
+  }
+  &:hover {
+    color: $black;
+    border-bottom: 2px solid $red;
+  }
+}

@@ -1,0 +1,37 @@
+.modal__wrap {
+  height: 100vh;
+}
+.modal__body {
+  display: grid;
+  grid-template-rows: 61px 1fr 61px;
+  height: 100%;
+}
+.modal-close-btn__wrap {
+  display: flex;
+  justify-content: flex-end;
+  padding: 11px 54.95px 11px 0;
+}
+.modal__desc {
+  padding-top: 60px;
+}
+.bookmark__link {
+  display: block;
+  margin-bottom: 17px;
+  font-size: 16px;
+  line-height: 1;
+  color: $red;
+}
+.colortext {
+  color: $red;
+}
+.quote {
+  margin-bottom: 130px;
+  font-size: 18px;
+}
+.quote_big {
+  margin-bottom: 120px;
+  font-size: 30px;
+}
+.quote-author {
+  color: $text-grey;
+}

@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 body {
+  position: relative;
   min-width: 385px;
   width: 100%;
   background: #fff;
@@ -20,6 +21,7 @@ a {
   &:hover {
     color: $red;
     text-decoration: none;
+    opacity: 0.8;
   }
 }
 input {
@@ -31,7 +33,7 @@ p {
 .wrapper_full-height {
   display: flex;
   align-items: center;
-  height: calc(100vh - 122px);
+  height: calc(100vh - 230px);
   @media screen and (max-width: 480px) {
     & {
       height: auto;
@@ -45,4 +47,9 @@ p {
 .container-fluid {
   max-width: 1440px;
   width: 100%;
+}
+.title {
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 1;
 }
